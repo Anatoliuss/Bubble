@@ -1,0 +1,11 @@
+ARR=[1, 22, 11, 34, 0]
+loop COUNT from 0 to 4
+    loop ACOUNT from 0 to 4
+        if ARR[ACOUNT+1]<ARR[ACOUNT] then
+            TEMP = ARR[ACOUNT+1]
+            ARR[ACOUNT+1]=ARR[ACOUNT]
+            ARR[ACOUNT]=TEMP
+        end if
+    end loop
+end loop
+output ARR
